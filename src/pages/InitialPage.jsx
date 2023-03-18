@@ -8,14 +8,14 @@ const InitialPage = ({ input, setInput }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) =>{
-    navigate(input ? "/result" : "/")
-    // e.preventDefault();
-    // if(input == "" && input == null){
-    //   alert("Enter a text, input can't be empty");
-    //   navigate("/")
-    // }else{
-    //   navigate("/result")
-    // }
+    // navigate(input ? "/result" : "/")
+    e.preventDefault();
+    if(!input){
+      alert("Enter a text, input can't be empty");
+      navigate("/")
+    }else{
+      navigate("/result")
+    }
   }
   return (
     <div className="initial_page">
