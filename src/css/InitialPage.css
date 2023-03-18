@@ -1,3 +1,49 @@
 .initial_page{
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 35%;
+}
+
+.form input,.form button{
+    padding: 10px 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.form button{
+    cursor: pointer;
+}
+
+/* Media Query for responsiveness */
+
+@media (max-width: 1024px) {
+    .form{
+        width: 40%;
+    }
+}
+
+/* medium screens */
+@media (max-width: 991px) {
+    .form{
+        width: 65%;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+    .form{
+        width: 90%;
+        gap: 10px;
+    }
+    .form input,.form button{
+        font-size: 16px;
+    }
 }
