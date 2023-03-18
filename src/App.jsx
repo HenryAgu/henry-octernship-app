@@ -1,28 +1,32 @@
-import { useState } from 'react';
+import { useState } from "react";
 // stylesheet
-import './App.css'
+import "./App.css";
 
 // react router dom
-import { BrowserRouter,Route,Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
-import InitialPage from './pages/InitialPage';
-import Result from './pages/Result';
+import InitialPage from "./pages/InitialPage";
+import Result from "./pages/Result";
 
 function App() {
-
+  const [input, setInput] = useState("");
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<InitialPage/>}/>
+          <Route
+            exact
+            path="/"
+            element={<InitialPage input={input} setInput={setInput} />}
+          />
         </Routes>
         <Routes>
-          <Route path='/result' element={<Result/>}/>
+          <Route path="/result" element={<Result />} />
         </Routes>
       </BrowserRouter>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
