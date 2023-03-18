@@ -3,9 +3,9 @@ import React from 'react'
 // stylesheet
 import '../css/Result.css';
 
-const result = () => {
+const result = ({input}) => {
   return (
-    <div>result</div>
+    <div>{input}</div>
   )
 }
 

@@ -22,7 +22,7 @@ function App() {
           />
         </Routes>
         <Routes>
-          <Route path="/result" element={<Result />} />
+          <Route path="/result/:text" element={<Result resultInput={input}/>} />
         </Routes>
       </BrowserRouter>
     </div>
