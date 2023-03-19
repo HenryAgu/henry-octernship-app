@@ -13,6 +13,7 @@ function App() {
   const [input, setInput] = useState("");
   return (
     <div className="App">
+      <h1>Welcome To DupliFree</h1>
       <BrowserRouter>
         <Routes>
           <Route
@@ -22,7 +23,10 @@ function App() {
           />
         </Routes>
         <Routes>
-          <Route path="/result/:text" element={<Result resultInput={input}/>} />
+          <Route
+            path="/result/:text"
+            element={<Result input={input} />}
+          />
         </Routes>
       </BrowserRouter>
     </div>

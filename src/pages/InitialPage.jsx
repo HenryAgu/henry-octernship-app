@@ -1,6 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
+
+
 // React Navigate
 import { useNavigate } from "react-router-dom";
+
+
 // stylesheet
 import "../css/InitialPage.css";
 
@@ -8,15 +12,18 @@ const InitialPage = ({ input, setInput }) => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
-    // navigate(input ? "/result" : "/")
-    e.preventDefault();
     if (!input || input.trim() === "" || input == null) {
       alert("Enter a text, input can't be empty");
       navigate("/");
     } else {
       navigate(`/result/${input}`);
+      // setInput("");
     }
   };
+  useEffect(() => {
+    setInput("")
+  }, [])
+  
   return (
     <div className="initial_page">
       <div className="form">
