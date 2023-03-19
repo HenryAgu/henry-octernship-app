@@ -1,18 +1,309 @@
 .result{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    width: 95%;
+    margin: 0 auto;
     gap: 50px;
 }
 
 .go_back{
     font-size: 30px;
     color: black;
+    display: block;
 }
 
-.result_card{
-    border: 1.5px solid black;
-    padding: 20px 25px;
+.delete{
+    position: relative;
+    bottom: 20px;
+    left: 25px;
+}
+
+
+/* alphabet rendering */
+
+.letter-a{
+    border: 1.5px solid inherit;
+    background-color: red;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-b{
+    border: 1.5px solid inherit;
+    background-color: skyblue;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-c{
+    border: 1.5px solid inherit;
+    background-color: greenyellow;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-d{
+    border: 1.5px solid inherit;
+    background-color: powderblue;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.letter-e{
+    border: 1.5px solid inherit;
+    background-color: forestgreen;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-f{
+    border: 1.5px solid inherit;
+    background-color: rgb(156, 216, 156);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-g{
+    border: 1.5px solid inherit;
+    background-color: rgb(206, 184, 96);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.letter-h{
+    border: 1.5px solid inherit;
+    background-color: rgba(27, 63, 27, 0.689);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-i{
+    border: 1.5px solid inherit;
+    background-color: rgb(94, 127, 161);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-j{
+    border: 1.5px solid inherit;
+    background-color: rgb(7, 84, 101);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-k{
+    border: 1.5px solid inherit;
+    background-color: rgb(125, 128, 125);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-l{
+    border: 1.5px solid inherit;
+    background-color: rgba(143, 119, 141, 0.938);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.letter-m{
+    border: 1.5px solid inherit;
+    background-color: rgb(21, 137, 220);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.letter-n{
+    border: 1.5px solid inherit;
+    background-color: rgb(179, 160, 166);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-o{
+    border: 1.5px solid inherit;
+    background-color: rgb(237, 90, 203);
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-p{
+    border: 1.5px solid inherit;
+    background-color: rgb(22, 255, 208);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-q{
+    border: 1.5px solid inherit;
+    background-color: rgb(46, 63, 46);
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+
+.letter-r{
+    border: 1.5px solid inherit;
+    background-color: lavender;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-s{
+    border: 1.5px solid inherit;
+    background-color: violet;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-t{
+    border: 1.5px solid inherit;
+    background-color: lightcoral;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-u{
+    border: 1.5px solid inherit;
+    background-color: whitesmoke;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-v{
+    border: 1.5px solid inherit;
+    background-color: navajowhite;
+    padding: 25px 40px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-w{
+    border: 1.5px solid inherit;
+    background-color: hotpink;
+    padding: 25px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-x{
+    border: 1.5px solid inherit;
+    background-color: sandybrown;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-y{
+    border: 1.5px solid inherit;
+    background-color: orangered;
+    padding: 25px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.letter-z{
+    border: 1.5px solid inherit;
+    background-color: peru;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px 40px;
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
