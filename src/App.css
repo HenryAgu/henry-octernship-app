@@ -1,8 +1,19 @@
 /* Fredoka One Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+.App{
+    margin-bottom: 50px;
+}
+
 .App h1{
     text-align: center;
     margin-top: 100px;
     font-size: 50px;
     font-family: 'Fredoka One', cursive;
+}
+
+/* Small Screens */
+@media only screen and (max-width: 480px) {
+    .App h1{
+        font-size: 35px;
+    }
 }

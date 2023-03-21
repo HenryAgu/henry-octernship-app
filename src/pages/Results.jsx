@@ -109,6 +109,7 @@ const Results = ({ input }) => {
       </div>
       {success ? (
         <div className="original_final">
+          <h3>Success!!!!</h3>
           <span className="original">
             <b>Original Text:</b> {originalText}
           </span>
