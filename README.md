@@ -3,6 +3,9 @@
 This web application removes the duplicate alphabets in words submitted in the input tag. With its simple and intuitive design, the Duplicate Word Remover Web App is a powerful tool for anyone looking to clean up and organize their lists of words quickly and efficiently.
 
 # Screenshot
+![duplifree](https://user-images.githubusercontent.com/74037448/226723639-ca0577fd-28e6-496c-9c69-29229f4fda21.PNG)
+![duplifree2](https://user-images.githubusercontent.com/74037448/226723647-799bc130-130f-47cc-a9f2-bd42c7099193.PNG)
+![duplifree3](https://user-images.githubusercontent.com/74037448/226723652-f975355d-1148-4dc7-b786-c570fdaf00c0.PNG)
 
 ### Built with
 
