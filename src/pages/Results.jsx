@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 // classname
 import classNames from "classnames";
 
+// stylesheet
 import "../css/Result.css";
 
 // Link
