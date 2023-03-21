@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // pages
 import InitialPage from "./pages/InitialPage";
-import Result from "./pages/Result";
+import Results from "./pages/Results";
 
 function App() {
   const [input, setInput] = useState("");
@@ -25,7 +25,7 @@ function App() {
         <Routes>
           <Route
             path="/result/:text"
-            element={<Result input={input} />}
+            element={<Results input={input} setInput={setInput}/>}
           />
         </Routes>
       </BrowserRouter>
