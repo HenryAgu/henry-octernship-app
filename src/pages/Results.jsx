@@ -51,9 +51,10 @@ const Results = ({ input }) => {
   useEffect(() => {
     setFinalText(input);
     setOriginalText(input);
+    let lowerInput = input.toLowerCase()
     const empty = [];
-    for (let i = 0; i < input.length; i++) {
-      const objItem = { char: input[i], id: i };
+    for (let i = 0; i < lowerInput.length; i++) {
+      const objItem = { char: lowerInput[i], id: i };
       empty.push(objItem);
     }
     setArrayObject(empty);
