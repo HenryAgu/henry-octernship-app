@@ -9,15 +9,29 @@ import "../css/Result.css";
 // Link
 import { Link } from "react-router-dom";
 
+// copy to clipboard
+import copy from 'copy-to-clipboard';
+
 // react icons
 import { MdKeyboardBackspace } from "react-icons/md";
 import { ImBin } from "react-icons/im";
+import { CgCopy } from "react-icons/cg";
 
 const Results = ({ input }) => {
   const [arrayObject, setArrayObject] = useState([]);
   const [originalText, setOriginalText] = useState("");
   const [finalText, setFinalText] = useState("");
   const [success, setSuccess] = useState(false);
+
+  // handle copy to clipboard
+  const copyToClipboard = (text) => {
+    copy(text)
+  }
+
+  const handleCopy = () =>{
+    alert("Copied!")
+    copyToClipboard(finalText)
+  }
 
   // handle delete
   const handleDelete = (item) => {
@@ -117,6 +131,7 @@ const Results = ({ input }) => {
           </span>
           <span className="final">
             <b>Final Text:</b> {finalText}
+            <CgCopy className="copy_icon" onClick={handleCopy}/>
           </span>
         </div>
       ) : (

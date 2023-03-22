@@ -36,6 +36,15 @@
 
 .final{
     color: orangered;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.copy_icon{
+  color: navy;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .card {
